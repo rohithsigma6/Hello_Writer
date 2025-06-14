@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "main_title": "Screenplay Blogs | Editor",
+    "meta_decsription": "Explore Screenplay's blog for tips, advice, and insights on building secure and meaningful screenplays.",
+    "decsription": "Explore Screenplay's blog for tips, advice, and insights on building secure and meaningful screenplays.",
+    "title": "Screenplay Blogs | Editor",
+    "slug": "best-screenplay-app",
+    "meta_image": "https://screenplay-assets.s3.ap-south-1.amazonaws.com/screenplay-logo-white.png",
+    "meta_image_alt": "Screenplay Blogs | Editor",
+    "blog_path": "/blogs/best-screenplay-app"
+  },
+  "content": [
+    {
+      "type": "h1",
+      "content": "Screenplay Blogs | Editor",
+      "class": "main-title textColor "
+    }
+  ]
+}

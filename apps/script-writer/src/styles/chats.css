@@ -1,0 +1,35 @@
+/* Custom Scrollbar for Vertical Scroll */
+.custom-scrollbar2::-webkit-scrollbar {
+    width: 2px; /* Set the scrollbar width */
+    height: 0; /* Hide horizontal scrollbar */
+  }
+  
+  .custom-scrollbar2::-webkit-scrollbar-thumb {
+    background-color: black; /* Thumb color */
+    border-radius: 8px; /* Rounded corners for thumb */
+    height: 20px;
+  }
+  
+  .custom-scrollbar2::-webkit-scrollbar-track {
+    background: rgb(242, 242, 242); 
+    height: 107px;
+    border-radius: 8px; /* Rounded corners for track */
+
+  }
+  .custom-scrollbar2::-webkit-scrollbar-button {
+  display: none;
+  }
+  
+  .custom-scrollbar2 {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: black rgb(242, 242, 242); /* Thumb color and track color */
+
+  }
+  
+  /* Hide Horizontal Scroll */
+  .custom-scrollbar2 {
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+
+  }
+  

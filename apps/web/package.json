@@ -1,0 +1,38 @@
+{
+  "name": "@screenplay-ink/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next-image-export-optimizer && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/env": "^15.1.4",
+    "@next/third-parties": "^15.2.2",
+    "@screenplay-ink/web": "file:",
+    "next": "^15.3.0",
+    "next-image-export-optimizer": "^1.18.0",
+    "next-landing": "file:",
+    "next-seo": "^6.6.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.4.0",
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/optimize-css-assets-webpack-plugin": "^5.0.8",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "eslint-plugin-next": "^0.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

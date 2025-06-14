@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'courier-bold-italic';
+  src: url('/bold-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'courier-bold';
+  src: url('/draft-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'courier-regular-italic';
+  src: url('/draft-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'courier-regular';
+  src: url('/draft-regular-powerline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'draft-regular';
+  src: url('/draft-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

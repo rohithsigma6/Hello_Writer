@@ -1,0 +1,20 @@
+/node_modules
+.env*
+
+# env/
+
+downloads/
+data.csv
+.docker-compose.env
+
+.env.development
+.env.production
+
+.vscode/
+.migrate
+
+creds/
+logger.log
+dist/
+.qodo
+.env

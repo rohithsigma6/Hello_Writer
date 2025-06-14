@@ -1,0 +1,228 @@
+.ProseMirror p {
+  color: var(--editor-text);
+  font-family: 'courier-regular';
+  font-size: 12pt;
+  line-height: 17px !important;
+  margin-bottom: 17px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.node-container p {
+  flex: 1 1;
+}
+
+.tiptap {
+  outline: none;
+  counter-reset: scenenumber;
+}
+
+.scene {
+  background-color: none;
+  counter-increment: scenenumber;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 20px !important;
+  padding-top: 2px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.scene::before {
+  content: counter(scenenumber);
+  position: absolute;
+  margin-left: -0.8in;
+}
+
+.node-container {
+  align-items: baseline;
+  display: flex;
+  position: relative;
+}
+
+.character {
+  margin-bottom: 0 !important;
+  padding-left: 2in;
+  text-transform: uppercase;
+}
+
+.parenthetical {
+  margin-bottom: 0 !important;
+  padding-left: 1.5in !important;
+}
+
+.dialogue {
+  margin-left: 1in;
+  margin-right: 2in;
+  width: 31ch;
+}
+
+.shot {
+  text-transform: uppercase !important;
+}
+
+.collaboration-cursor__caret {
+  border-left: 1px solid #0d0d0d;
+  border-right: 1px solid #0d0d0d;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+/* Render the username above the caret */
+
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: #0d0d0d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ProseMirror insert {
+  color: green;
+  text-decoration: underline;
+}
+.ProseMirror delete {
+  color: red;
+  text-decoration: line-through;
+}
+
+.transition {
+  transition-duration: 0.15s;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    -webkit-text-decoration-color,
+    -webkit-backdrop-filter;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter,
+    -webkit-text-decoration-color,
+    -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section,
+.transition {
+  text-transform: uppercase;
+}
+
+.transition {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right !important;
+  width: 100%;
+}
+
+/* SUPER */
+
+.super {
+  line-height: 17px !important;
+  text-align: justify;
+}
+
+.super::before {
+  content: 'SUPERIMPOSE: ';
+  float: left;
+  display: inline;
+}
+
+.dualdialogue {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dualdialogueitem {
+  flex: 1 1;
+  max-width: 50%;
+}
+
+.dualdialogue .character {
+  padding-left: 1in;
+}
+
+.character.is-empty:before,
+.dialogue.is-empty:before {
+  color: #d3d3d3;
+  content: 'Character' !important;
+  position: absolute;
+}
+
+.dualdialogue .dialogue {
+  margin-left: 0.1in;
+  margin-right: 0.1in;
+}
+
+.dialogue.is-empty:before {
+  content: 'Write Dialog' !important;
+}
+
+.character.is-empty:before {
+  color: #d3d3d3;
+  content: 'Character' !important;
+  position: absolute;
+}
+
+.icon-container {
+  visibility: hidden;
+}
+
+.node-Screenplay.has-focus > .node-container > .icon-container {
+  visibility: visible;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  animation: confetti 2s linear infinite;
+}
+
+.dialogue::first-letter,
+.action::first-letter,
+.super::first-letter {
+  display: block;
+  text-transform: uppercase;
+}
+
+.autocomplete-suggestion {
+  color: #8080807a !important;
+}

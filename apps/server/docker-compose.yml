@@ -1,0 +1,10 @@
+services:
+  app:
+    image: ${ECR_REGISTRY}/${ECR_REPOSITORY}:${IMAGE_TAG}
+    env_file:
+      - ${ENV_FILE}
+    ports:
+      - "8080:8080"
+      - "5000:5000"
+    # volumes:
+    #   - ${ENV_FILE}:/app/.env

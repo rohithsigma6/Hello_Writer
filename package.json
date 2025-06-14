@@ -1,0 +1,49 @@
+{
+  "name": "screenplay-ink",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "turbo": "^2.4.2",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@kunalukey/tiptap-pagination-patch": "^2.1.8",
+    "@screenplay-ink/editor": "^1.0.0",
+    "@tiptap/extension-bold": "^2.11.5",
+    "@tiptap/extension-collaboration": "^2.11.9",
+    "@tiptap/extension-collaboration-cursor": "^2.11.9",
+    "@tiptap/extension-color": "^2.11.5",
+    "@tiptap/extension-dropcursor": "^2.11.5",
+    "@tiptap/extension-highlight": "^2.11.5",
+    "@tiptap/extension-italic": "^2.11.5",
+    "@tiptap/extension-paragraph": "^2.11.5",
+    "@tiptap/extension-text-style": "^2.11.5",
+    "@tiptap/extension-underline": "^2.11.5",
+    "@tiptap/pm": "^2.11.5",
+    "@tiptap/react": "^2.11.5",
+    "@tiptap/starter-kit": "^2.11.5",
+    "prosemirror-keymap": "^1.2.2",
+    "screenplay-ink": "file:",
+    "sharp": "^0.34.1"
+  },
+  "optionalDependencies": {
+    "@esbuild/win32-arm64": "^0.25.2",
+    "@rollup/rollup-win32-arm64": "^4.39.0",
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
+  }
+}

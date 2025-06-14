@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../../public/font/garnett/Garnett-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../../public/font/garnett/Garnett-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Garnett";
+    src: url("../../public/font/garnett/Garnett-Bold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+
+/* @font-face {
+  font-family: "MyCustomFont"; 
+  src: url("fonts/MyFont.woff2") format("woff2"),
+    url("fonts/MyFont.woff") format("woff"),
+    url("fonts/MyFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.garnet-regular {
+    font-family: "Garnett";
+}
+
+.garnet-medium {
+    font-family: "Garnett";
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.price-bottom-section {
+    width: 100%;
+    position: relative;
+    background: url("../../public/assets/pricing/footer-top-bg-price.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 293px 0px;
+}
+
+@media (max-width: 991px) {
+    .price-bottom-section {
+        padding: 100px 0px;
+    }
+}
